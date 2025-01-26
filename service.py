@@ -43,15 +43,3 @@ class LSTMService:
 
         possible_next_words = [word for word, _ in next_words.items()][:k]
         return possible_next_words
-
-
-
-                
-
-                
-
-
-        
-
-
-

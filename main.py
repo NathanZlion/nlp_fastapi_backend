@@ -54,9 +54,5 @@ def get_next_word_top_counts(request: NextWordSuggestionRequest, k: int) -> Next
         if not poss_nxt_word:
                 
             raise HTTPException(status_code=400, detail="The context is not in the vocabulary")
-
-      
         
         return NextWordSuggestionTopCounts(possible_next_words=poss_nxt_word)
-
-
