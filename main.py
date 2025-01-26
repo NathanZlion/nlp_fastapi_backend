@@ -44,7 +44,7 @@ def get_next_word(request: NextWordSuggestionRequest) -> NextWordSuggestion:
         return NextWordSuggestion(next_word=nxt_word)
 
     
-@app.post("/next_word/all/{k}")
+@app.post("/next_word/{k}")
 def get_next_word_top_counts(request: NextWordSuggestionRequest, k: int) -> NextWordSuggestionTopCounts:
         
         text = request.text
