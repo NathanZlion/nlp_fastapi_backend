@@ -37,14 +37,7 @@ class LSTMNextWord:
     def next_word_suggestion(self, context : list[str]):
 
         if len(context) <= 2:
-
             return {}
-        
-        for word in context:
-
-            if word not in self.tokenizer.vocab:
-
-                return {}
 
         input_sequence = [self.tokenizer.encode(" ".join(context))]
 
